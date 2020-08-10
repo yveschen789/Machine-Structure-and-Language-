@@ -1,0 +1,52 @@
+in while loop segment 0 is 30110 program counter is: 0
+rega is 1 and loading value 4226
+in while loop segment 0 is 30110 program counter is: 1
+register c is 4226 and program counter after case 12 is 4226
+in while loop segment 0 is 30110 program counter is: 4226
+rega is 1 and loading value 4241
+in while loop segment 0 is 30110 program counter is: 4227
+register c is 4241 and program counter after case 12 is 4241
+in while loop segment 0 is 30110 program counter is: 4241
+rega is 1 and loading value 4228
+in while loop segment 0 is 30110 program counter is: 4242
+size of seg [0] is: 30110 and b is: 4228
+in while loop segment 0 is 30110 program counter is: 4243
+rega is 1 and loading value 4229
+in while loop segment 0 is 30110 program counter is: 4244
+rega is 2 and loading value 100
+in while loop segment 0 is 30110 program counter is: 4245
+size of seg [0] is: 30110 and b is: 4229
+in while loop segment 0 is 30110 program counter is: 4246
+rega is 1 and loading value 4230
+in while loop segment 0 is 30110 program counter is: 4247
+size of seg [0] is: 30110 and b is: 4230
+in while loop segment 0 is 30110 program counter is: 4248
+rega is 1 and loading value 4231
+in while loop segment 0 is 30110 program counter is: 4249
+size of seg [0] is: 30110 and b is: 4231
+in while loop segment 0 is 30110 program counter is: 4250
+rega is 1 and loading value 4652
+in while loop segment 0 is 30110 program counter is: 4251
+register c is 4652 and program counter after case 12 is 4652
+in while loop segment 0 is 30110 program counter is: 4652
+rega is 0 and loading value 4662
+in while loop segment 0 is 30110 program counter is: 4653
+rega is 2 and loading value 4229
+in while loop segment 0 is 30110 program counter is: 4654
+b is: 0
+in while loop segment 0 is 30110 program counter is: 4655
+in while loop segment 0 is 30110 program counter is: 4656
+in while loop segment 0 is 30110 program counter is: 4657
+size of seg [0] is: 30110 and b is: 4229
+in while loop segment 0 is 30110 program counter is: 4658
+rega is 1 and loading value 4252
+in while loop segment 0 is 30110 program counter is: 4659
+rega is 2 and loading value 1
+in while loop segment 0 is 30110 program counter is: 4660
+in while loop segment 0 is 30110 program counter is: 4661
+register c is 4662 and program counter after case 12 is 4662
+in while loop segment 0 is 30110 program counter is: 4662
+rega is 3 and loading value 3
+in while loop segment 0 is 30110 program counter is: 4663
+creating in indice: 1 of size: 3
+in while loop segment 0 is 3 program counter is: 4664

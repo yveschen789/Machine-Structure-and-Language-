@@ -1,0 +1,25 @@
+with these inputs:
+(gdb) info registers
+rax            0x10e	270
+rbx            0x0	0
+rcx            0x20	32
+rdx            0x0	0
+rsi            0x0	0
+rdi            0x7fffffffd520	140737488344352
+rbp            0x0	0x0
+rsp            0x7fffffffdb18	0x7fffffffdb18
+r8             0x7ffff7dd5060	140737351864416
+r9             0x0	0
+r10            0x0	0
+r11            0x0	0
+r12            0x400db0	4197808
+r13            0x7fffffffdc20	140737488346144
+r14            0x0	0
+r15            0x0	0
+rip            0x401824	0x401824 <explode_bomb>
+eflags         0x202	[ IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
