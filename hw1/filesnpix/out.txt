@@ -1,0 +1,1281 @@
+You will want to come up with some strategy for carefully testing your readaline function Of course
+hugefile.txt -----------331
+Each word in either line is the same as the corresponding word in the other line ie the first
+hugefile.txt -----------398
+The term character refers to any of the 256 characters of ISO Latin1 extended ASCII The bytes in
+hugefile.txt -----------278
+design work etc Note in your annotations everything that you are required to submit and every
+hugefile.txt -----------168
+pixels as are there no more no fewer Dont forget that the brightness of each pixel is represented as a
+hugefile.txt -----------218
+lines in it use devurandom instead of devzero Youll then be able to
+hugefile.txt -----------3
+Your simlines program should perform well on inputs resulting in at least 10000 match groups with up to
+hugefile.txt -----------465
+45 Problem analysis and advice 6
+hugefile.txt -----------43
+assignments We have listed a time estimate for the first step of the provided implementation plan as a
+hugefile.txt -----------567
+abcdef
+hugefile.txt -----------405
+credit
+hugefile.txt -----------603
+testing plans for brightness Youll get essentially no credit for saying I plan to try it with lots of inputs
+hugefile.txt -----------586
+The first line of each output group contains the list of match words separated from each other
+hugefile.txt -----------424
+laid out in the architecture portion of your design
+hugefile.txt -----------563
+What data structures will you create to represent a match group
+hugefile.txt -----------479
+exit4 You learned to call exit in Part A
+hugefile.txt -----------309
+23 C vs C 3
+hugefile.txt -----------34
+6 Part C Similarities in files
+hugefile.txt -----------352
+readaline implementation in Part C We suggest you plan for longer lines but for a start support
+hugefile.txt -----------345
+out your work but also to identify steps that exceeded your estimates in order to better prepare for future
+hugefile.txt -----------566
+Please create a single source file named readalinec Within that file you must
+hugefile.txt -----------257
+In place of much of the C technique you already know you have new C techniques to learn The
+hugefile.txt -----------228
+them both a day late and its still only one token total Of course if either is two days late thats two
+hugefile.txt -----------606
+7 Route the output from readaline into the Hanson data structures that you have selected for your
+hugefile.txt -----------581
+Draw a stack diagram Stack diagrams are not analogies or the way you think about how functions work They are precise descriptions of what actually happens in the computer Therefore you
+hugefile.txt -----------322
+use comp40
+hugefile.txt -----------106
+what is required for this assignment specifically are given below
+hugefile.txt -----------523
+Only one partner makes each submission and the same partner should submit both the design and the final
+hugefile.txt -----------596
+Definition of line similarity
+hugefile.txt -----------383
+calling your readaline function Think about it Why or why not You do not need to submit your
+hugefile.txt -----------339
+5
+hugefile.txt -----------201
+Choose the assignment Filesnpix and upload your document
+hugefile.txt -----------620
+key then use of the Atom interface is optional
+hugefile.txt -----------513
+The following gives the rules for determining whether two lines are similar
+hugefile.txt -----------384
+fail after executing hundreds of thousands of lines of additional code
+hugefile.txt -----------501
+The name of the file in which the match occurred exactly as specified in the corresponding
+hugefile.txt -----------427
+simple introduction to Compile Scripts and Makefiles which is for a previous version of this assignment
+hugefile.txt -----------249
+pstopnm
+hugefile.txt -----------224
+Although we will give you some hints like these about the differences between C and C we also expect
+hugefile.txt -----------131
+simlines output specification
+hugefile.txt -----------413
+both languages are very widely used to this day
+hugefile.txt -----------123
+Do not make a copy of readalineh in your project directory Your submission will not be accepted if you
+hugefile.txt -----------270
+2 Background and preparation
+hugefile.txt -----------74
+You are supplied with a set of methods for each of the Hanson structures Which ones will you use to
+hugefile.txt -----------555
+tests or even of all tests Read the specification and check your output carefully
+hugefile.txt -----------463
+any issues Note that if you resubmit an improved version of your design document you will need to
+hugefile.txt -----------623
+readaline input line too longn
+hugefile.txt -----------307
+graymap
+hugefile.txt -----------186
+Be careful If your output does not exactly match the specification you will not get credit Note
+hugefile.txt -----------461
+Print to standard output a single newlineterminated line containing the average brightness of the supplied
+hugefile.txt -----------180
+features like stdin fopen etc
+hugefile.txt -----------91
+Create a 100MB file
+hugefile.txt -----------12
+minute before midnight on the day indicated in the course calendar You may turn in assignments up to
+hugefile.txt -----------600
+characters
+hugefile.txt -----------388
+6 Part C Similarities in files 9
+hugefile.txt -----------48
+62 Performance target
+hugefile.txt -----------464
+readaline returns the number of bytes in the line
+hugefile.txt -----------286
+how modern software uses the hardware on which it runs You will find that C being a smaller and simpler
+hugefile.txt -----------125
+hundreds of thousands of lines of input Due to limitations in the implementations of Hansons libraries if
+hugefile.txt -----------466
+If readaline is called when there are no more lines to be read it sets datapp to NULL and returns
+hugefile.txt -----------291
+Be sure you have read the course policies These policies are implicitly part of the specifications for all Comp
+hugefile.txt -----------147
+This assignment has several goals
+hugefile.txt -----------78
+Acknowledges help you may have received or collaborative work you may have undertaken with classmates programming partners course staff or others
+hugefile.txt -----------628
+make sure that they run correctly Time 10 minutes
+hugefile.txt -----------571
+63 Problem analysis and advice 12
+hugefile.txt -----------54
+Create a 1GB file
+hugefile.txt -----------15
+DUE EARLY see our course calendar An overview of design documents in general and the details of
+hugefile.txt -----------522
+library routines such as fread
+hugefile.txt -----------351
+function will collect the data and store it somewhere thats where the party is The caller is asking
+hugefile.txt -----------320
+you could just use it in your Part C simlines program and hope everything works but we think youll
+hugefile.txt -----------332
+lines in the files that are similar to each other Below we give you a detailed specification of what the program
+hugefile.txt -----------354
+correct organizing your code and then writing and debugging it will become much easier
+hugefile.txt -----------495
+absolutely certain you understand the role of the NUL character 0 in the termination of C strings
+hugefile.txt -----------506
+How will you efficiently find out whether a given line from an input file belongs in a match group
+hugefile.txt -----------480
+newline character If you read a line that is longer than your implementation can handle your readaline
+hugefile.txt -----------305
+0000
+ex.txt -----------13
+hugefile.txt -----------206
+once for each command line reference Note that this is very likely to result in similarities being detected
+hugefile.txt -----------377
+sunfire33megan
+ex.txt -----------16
+hugefile.txt -----------209
+data structures you must use the Atom interface When using a string as a value as opposed to a
+hugefile.txt -----------512
+it figure things out use the system documentation get help You may not succeed completely at everything
+hugefile.txt -----------99
+52 Partial credit 8
+hugefile.txt -----------46
+if Pnmrdr fails to detect an error in what is supposed to be an image file Answer for this assignment
+hugefile.txt -----------235
+51 readaline specification 7
+hugefile.txt -----------45
+15
+hugefile.txt -----------616
+If there is more than one match group the corresponding output sections are separated from each
+hugefile.txt -----------419
+nontrivial code
+hugefile.txt -----------245
+put the majority of your time into coding your program Youll be tempted to build all or most of it
+hugefile.txt -----------497
+Note that nonword characters are significant only as separators Thus the following lines are all
+hugefile.txt -----------400
+0
+hugefile.txt -----------292
+components Specifically we will require only the components that best address the challenges of the
+hugefile.txt -----------544
+sunfire33megan djpeg grayscale bearjpg brightness
+ex.txt -----------14
+hugefile.txt -----------207
+order the specification determines character by character exactly what your output must be
+hugefile.txt -----------460
+and three digits after the decimal point
+hugefile.txt -----------182
+General Expectations for Comp 40 Homework
+hugefile.txt -----------149
+ideas are all similar like old wine C is a new bottle
+hugefile.txt -----------229
+45 Problem analysis and advice
+hugefile.txt -----------226
+21 Purpose of this assignment 2
+hugefile.txt -----------32
+must not consult the man pages or other documentation relating to them Reason we want you to learn to
+hugefile.txt -----------300
+only the 200 character minimum Go on to Part C and get that running If you get all of that working
+hugefile.txt -----------346
+and reported since files are mostly similar to themselves
+hugefile.txt -----------378
+None of the following lines is similar to the others
+hugefile.txt -----------408
+page Help each other learn In Comp 40 you must not share work on your solutions but you are welcome
+hugefile.txt -----------133
+that follow If there are multiple matches in a single file they are written in order of increasing
+hugefile.txt -----------437
+Compile and run this code
+hugefile.txt -----------578
+reported in order according to where the file references were in the command line Eg the command
+hugefile.txt -----------441
+Include the header file readalineh using include The header file itself is provided for you in
+hugefile.txt -----------258
+You will have to read and understand the interface for Pnmrdr and you will have to understand a little
+hugefile.txt -----------230
+your time When you test all of your work together the bugs could be almost anywhere A bug in one
+hugefile.txt -----------499
+You are still responsible for making sure that when Pnmrdr does detect an error in the image file
+hugefile.txt -----------243
+output
+hugefile.txt -----------315
+of advice
+hugefile.txt -----------161
+find that debugging is actually much harder that way When something goes wrong as it almost surely
+hugefile.txt -----------333
+Output hints 12
+hugefile.txt -----------52
+sunfire33megan brightness cellarpgm
+ex.txt -----------12
+hugefile.txt -----------205
+23 C vs C
+hugefile.txt -----------120
+In your final submission dont forget to include a README file which
+hugefile.txt -----------626
+Dont forget to run valgrind on your code
+hugefile.txt -----------518
+this document
+hugefile.txt -----------87
+TAs will often point you back to this document if you ask a question that is answered in these pages
+hugefile.txt -----------163
+To add the course binaries to your execution path run
+hugefile.txt -----------105
+and we can applaud your insight or correct misunderstandings as appropriate
+hugefile.txt -----------325
+readaline terminates with a Checked Runtime Error in any of the following situations
+hugefile.txt -----------293
+The characters comprising each file are grouped into zero or more lines as follows
+hugefile.txt -----------280
+README
+hugefile.txt -----------632
+Like all programming assignments for this class the programming parts of this assignment are due one
+hugefile.txt -----------599
+and others in Comp 40 dont worry about it The whole purpose of using Pnmrdr is to hide from you
+hugefile.txt -----------236
+do If your compiles fail when including that header file there is almost surely something wrong with your
+hugefile.txt -----------271
+dd ifdevzero oflargefile100gbtxt count1024 bs104857600
+hugefile.txt -----------22
+1 How will data in the program be represented and interconnected
+hugefile.txt -----------527
+code submission When you submit you will identify your partner by their CS login ie mmonro2
+hugefile.txt -----------597
+To give you experience reading and conforming exactly to specifications such as those contained in
+hugefile.txt -----------86
+To start you thinking about the interface as a unit of design
+hugefile.txt -----------83
+string processing libraries that you may or may not find helpful My solution does not use them but
+hugefile.txt -----------508
+properly
+hugefile.txt -----------330
+more comfortable using malloc and friends directly go ahead If you prefer the extra errorchecking
+hugefile.txt -----------327
+image The brightness should be printed in decimal notation with exactly one digit before the decimal point
+hugefile.txt -----------181
+To get started read Chapters 1 and 2 pages 131 of Hansons book To learn what Hanson has built for
+hugefile.txt -----------143
+zero brightness halts with an error see below
+hugefile.txt -----------189
+simlines output specification 11
+hugefile.txt -----------51
+of lines with tens of matches your program should respond more or less instantaneously
+hugefile.txt -----------473
+COMP 40
+hugefile.txt -----------82
+line are placed into a contiguous array of bytes and datapp is set to the address of of the first byte
+hugefile.txt -----------285
+You may exit with a failed assertion or other Hansonstyle Checked Runtime Exception see explanation
+hugefile.txt -----------195
+The terms character and line have the same definition as in the specifications for readaline
+hugefile.txt -----------385
+4
+hugefile.txt -----------175
+5 Part B Read a line
+hugefile.txt -----------256
+will point to
+hugefile.txt -----------554
+matching words list
+hugefile.txt -----------416
+22 Setting up your environment 3
+hugefile.txt -----------33
+Your submission via Gradescope will be comprised of three steps
+hugefile.txt -----------619
+Communication Two minds are greater than one Ten minds are greater than two Success in Comp 40
+hugefile.txt -----------536
+are similar
+hugefile.txt -----------366
+extension token then when midnight arrives submit whatever you have We are very willing to give partial
+hugefile.txt -----------602
+answer Make sure your implementation can handle every file that the specification requires Design
+hugefile.txt -----------340
+the input file are interpreted as such characters
+hugefile.txt -----------279
+There is a subtlety here we are asking you to use Pnmrdr to read image files and we are also sending
+hugefile.txt -----------233
+simlines testfile otherfile testfile
+hugefile.txt -----------442
+the various data structures you might be tempted to use
+hugefile.txt -----------488
+Since this is the first assignment we are providing you with a bare bones implementation plan see below
+hugefile.txt -----------561
+that Test carefully and then test again
+hugefile.txt -----------269
+Test test and test some more Do not underestimate our ability to throw weird test cases at your
+hugefile.txt -----------173
+that all of you should be able to accomplish quickly
+hugefile.txt -----------172
+When the time comes to write out a match group how will you write the matches in order
+hugefile.txt -----------485
+You will get one file Makefile Use make and the Makefile to build your programs Depending on how you
+hugefile.txt -----------112
+specified format
+hugefile.txt -----------584
+you to teach yourselves many of the details Other good sources include the books and links on our resources
+hugefile.txt -----------132
+dd ifdevzero oflargefile10mbtxt count1024 bs10240
+hugefile.txt -----------10
+We provide code to help you read image files you will find the Pnmrdr interface in comp40buildinclude
+hugefile.txt -----------214
+To give you experience teaching yourself about languages like C systems like Linux and system
+hugefile.txt -----------90
+Identifies you and your programming partner by name and CS login
+hugefile.txt -----------627
+edge cases and error cases is as important as writing good program code
+hugefile.txt -----------89
+command line argument The name is printed left justified ie starting at the beginning of
+hugefile.txt -----------428
+much less test them against your readaline implementation Just saying
+hugefile.txt -----------337
+If a portable graymap is promised but not delivered or if the supplied graymap has a pixel count of
+hugefile.txt -----------188
+53 Hints to get you moving 8
+hugefile.txt -----------47
+If testfile contained the words hello world on line 2 and otherfile contained the same words on
+hugefile.txt -----------448
+If an argument is given it should be the name of a portable graymap file in pgm format
+hugefile.txt -----------184
+C and only if you have time go back to enhance Part B for full credit You will lose much more
+hugefile.txt -----------72
+You may want to put this command in your cshrc or your profile
+hugefile.txt -----------107
+Your final submission should include at least these files
+hugefile.txt -----------631
+you use the data structures we think likely you may find performance slows dramatically if the number of
+hugefile.txt -----------467
+5 Part B Read a line 7
+hugefile.txt -----------44
+16
+hugefile.txt -----------640
+Lines containing no words including empty lines are not similar to other lines containing no words
+hugefile.txt -----------412
+They contain the same number of words
+hugefile.txt -----------397
+recommended 137140 161164 171173 and the first sections of Chapters 15 and 16
+hugefile.txt -----------145
+The simlines program accepts zero or more command line arguments each of which is the name of a
+hugefile.txt -----------361
+routine might not cause an immediate crash but might produce bad results or cause your program to
+hugefile.txt -----------500
+Each newline character is included in the line that it terminates
+hugefile.txt -----------283
+your program reports the error in an appropriate way Maybe or maybe not this will involve writing
+hugefile.txt -----------244
+abc abc def
+hugefile.txt -----------411
+The datapp parameter to readaline is a call by reference CBR parameter ie its used for function
+hugefile.txt -----------314
+refer to it by name not by number
+hugefile.txt -----------253
+must do Informally it reads through one or more files looking for cases in which two or more lines contain
+hugefile.txt -----------355
+readaline to store the location of the data in a location it has access to Thats what datapp refers to
+hugefile.txt -----------321
+If any of these situations arise the program produces no output on stdout The output on stderr
+hugefile.txt -----------374
+your test cases accordingly
+hugefile.txt -----------341
+details of how the image file is represented on disk Therefore its inappropriate to ask you to do more
+hugefile.txt -----------237
+8 Retrieve the necessary information from your data structures and output your match groups in the
+hugefile.txt -----------583
+1 As common sense would suggest the term
+hugefile.txt -----------390
+Hint you should not try to sort them using a sort routine There are much easier and more
+hugefile.txt -----------486
+If you spend an extension token on any part of the assignment it automatically applies to all
+hugefile.txt -----------604
+often takes less time to look at a map than it takes to find your way back from a wrong turn
+hugefile.txt -----------535
+Any contiguous grouping of word characters is a word
+hugefile.txt -----------389
+simlinesc
+hugefile.txt -----------634
+immediately start working with longer lines too
+hugefile.txt -----------348
+been assigned a partner or do not have permission to work separately such permission is very rare please
+hugefile.txt -----------155
+Create a 10GB file
+hugefile.txt -----------18
+42 Examples of Brightness in Use
+hugefile.txt -----------199
+To start to convince you that writing good test cases not just for correct or obvious input but also for
+hugefile.txt -----------88
+48 hours after the due date which will cost you one or two extension tokens If you wish not to spend an
+hugefile.txt -----------601
+Upon successful completion your program must terminate with an exit code of EXIT SUCCESS from
+hugefile.txt -----------190
+hugefile.txt -----------368
+2 Background and preparation 2
+hugefile.txt -----------31
+useful or when is it more appropriate to use Clanguage arrays structs etc
+hugefile.txt -----------483
+build ourselves many of the higherlevel features whose implementation is hidden in the runtimes of more
+hugefile.txt -----------127
+to teach yourself about the language features and tools that you need
+hugefile.txt -----------102
+A carefully designed modular solution for simlines will probably include at least two other files When
+hugefile.txt -----------636
+get information in and out of your structures
+hugefile.txt -----------556
+71 Design overview 13
+hugefile.txt -----------56
+For each match a line consisting of
+hugefile.txt -----------426
+There is also an important issue of style When using an enumeration literal such as Pnmrdr gray
+hugefile.txt -----------252
+provided by Hansons macros you may use them FWIW Norman Ramsey prefers Hansons versions
+hugefile.txt -----------328
+Simlines Architecture 1 page This section must convey your highlevel plan for using Hansons data
+hugefile.txt -----------547
+abc def
+hugefile.txt -----------392
+hugefile.txt -----------402
+hugefile.txt -----------403
+hugefile.txt -----------404
+hugefile.txt -----------409
+useful We are looking for a clean straightforward design
+hugefile.txt -----------520
+readalinec
+hugefile.txt -----------635
+You MUST use your implementation of readaline from Part B to read the data If you are using
+hugefile.txt -----------379
+something that works Without that you will have neither a working Part B nor Part C
+hugefile.txt -----------312
+Because design is such an essential part of Comp 40 you may find it helpful to read Norman Ramseys
+hugefile.txt -----------541
+13
+hugefile.txt -----------533
+A word character is any of lowercase a z uppercase A Z the digit characters 0 9 and
+hugefile.txt -----------386
+a Line and Part C Similarities in Files below
+hugefile.txt -----------69
+1Note that this definition implies that Cat and cat and cAt are all different words
+hugefile.txt -----------406
+nonword characters
+hugefile.txt -----------395
+will you will have to look everywhere to find the problem Therefore we strongly urge you to come
+hugefile.txt -----------334
+To introduce you to multiple representations of numbers
+hugefile.txt -----------94
+Create a 10MB file
+hugefile.txt -----------9
+As noted above the same file named repeatedly on the command line results in no special processing
+hugefile.txt -----------439
+We will separately test and grade the correctness of your implementation of this function by compiling just
+hugefile.txt -----------265
+Youll have to deal with two representations of real numbers between 0 and 1
+hugefile.txt -----------251
+Policies on Pair Programming
+hugefile.txt -----------151
+By the design deadline submit the design document described in Part D Design
+hugefile.txt -----------615
+You may resubmit until the original deadline ie not counting token extensions and we will grade the
+hugefile.txt -----------608
+A right justified seven digit integer giving the line number in which the match occurred Line
+hugefile.txt -----------432
+or online noting things you dont understand and indicating specific areas that will require research
+hugefile.txt -----------167
+line 7 The gray dashes in the sample output above are spaces in the actual output of simlines the
+hugefile.txt -----------449
+The first example takes its input from a file named on the command line and the second example takes its
+hugefile.txt -----------210
+supported file on our Linux system It is a standard type defined in stddefh and used by system
+hugefile.txt -----------350
+use q comp40
+hugefile.txt -----------108
+3 General Advice 4
+hugefile.txt -----------37
+A single additional space typically the 21st character unless the file name was long
+hugefile.txt -----------431
+Memory cannot be allocated using malloc
+hugefile.txt -----------373
+24 Getting started with Hansons Interfaces and Implementations 3
+hugefile.txt -----------35
+will be explained to you in detail
+hugefile.txt -----------97
+This must immediately cause the program to exit with status code 4 by calling the system function
+hugefile.txt -----------308
+we ask of you even by the end of the assignment although its certainly possible and many students do
+hugefile.txt -----------100
+and Python etc
+hugefile.txt -----------129
+There is one output section for each match group
+hugefile.txt -----------418
+The program identifies all cases in which two or more lines in any of the input files are similar to
+hugefile.txt -----------363
+New lines begin at the start of the file and after each newline character n
+hugefile.txt -----------282
+structure your code you may have to make minor modifications to the Makefile so that it will compile and
+hugefile.txt -----------113
+The way to avoid this is to put as much energy into your test plan and design as you put into the
+hugefile.txt -----------502
+been opened for reading As is common in specifications for computer programs and interfaces we carefully
+hugefile.txt -----------275
+You will have to understand the compiletime and linktime options that gcc needs to work with the
+hugefile.txt -----------246
+We define the term match group to refer to any set of two or more lines in the input files that are similar
+hugefile.txt -----------414
+program
+hugefile.txt -----------93
+to work with your fellow students to learn new languages and technologies
+hugefile.txt -----------134
+For which of these are Hansons datatype implementations such as List Table Set Sequence etc
+hugefile.txt -----------482
+25 Other Preparation 4
+hugefile.txt -----------36
+Writing down the answers to these questions before writing your code addresses two fundamental aspects of
+hugefile.txt -----------529
+abc def def
+hugefile.txt -----------410
+just trust that it does
+hugefile.txt -----------242
+used for testing file size only If youre looking for something that has
+hugefile.txt -----------2
+This problem boils down to simple string processing and standard data structures
+hugefile.txt -----------475
+want to get these right and there is a definite right way to draw these Please ask the course staff for
+hugefile.txt -----------323
+respecify who your partner is
+hugefile.txt -----------624
+72 Homework 1 Design Specifics 14
+hugefile.txt -----------57
+Hansons Atom interface maps equal strings to identical pointers so pointer equality is OK on strings
+hugefile.txt -----------510
+and the implementation in comp40buildlib If you use the supplied Makefile these should be found
+hugefile.txt -----------215
+7 Part D DESIGN Simlines Design
+hugefile.txt -----------521
+zeros are included in the line numbers
+hugefile.txt -----------434
+input from standard input as part of a Unix pipeline
+hugefile.txt -----------211
+of words indicating which line numbers in which files contain those words
+hugefile.txt -----------357
+The C language is for the most part a proper subset of C Indeed C came first and was only many years
+hugefile.txt -----------121
+specific case that you must cover You will not be turning in your annotated copy but it will serve as
+hugefile.txt -----------169
+83 Submitting your completed code
+hugefile.txt -----------625
+the same page and allows the course staff to warn of looming problems before they derail you
+hugefile.txt -----------539
+52 Partial credit
+hugefile.txt -----------302
+1 Summary of the Assignment
+hugefile.txt -----------63
+the same words in the same order It produces on standard output a report with a section for each such list
+hugefile.txt -----------356
+contact the instructor immediately You will get no credit if you work alone unless you have permission
+hugefile.txt -----------156
+instructions there will be many things that at first you wont understand Not everything you need to know
+hugefile.txt -----------96
+check your output but its a good way to time your program without waiting for hundreds of thousands of
+hugefile.txt -----------471
+define some terms and then use those to specify the behavior of readaline
+hugefile.txt -----------276
+you are ready to submit cd into the directory you are submitting and type the following command
+hugefile.txt -----------637
+You may alter this plan if youd like and will likely need to flesh out portions of it to match the plans you
+hugefile.txt -----------562
+that formatting errors tend to impact all of your output and can easily result in failure of multiple
+hugefile.txt -----------462
+otherfile7
+hugefile.txt -----------446
+large programming efforts
+hugefile.txt -----------530
+the line and padded to the right with blanks to fill a total of 20 characters If the filename
+hugefile.txt -----------429
+go back and extend readaline to handle longer lines In principle your Part C program should
+hugefile.txt -----------347
+44 Getting image files
+hugefile.txt -----------220
+Although C itself does not include the sorts of highlevel structures like Lists Sets or hashbased TablesMaps you might find in C or Java we in Comp 40 give you implementations by Dave Hanson
+hugefile.txt -----------136
+the prompts will be different but your output should be just like this
+ex.txt -----------11
+hugefile.txt -----------204
+Indicate the partner that you worked with
+hugefile.txt -----------621
+25 Other Preparation
+hugefile.txt -----------146
+4 Part A Brightness of a grayscale image 5
+hugefile.txt -----------38
+step in your implementation plan what tests will you run in order to confidently move forward with your
+hugefile.txt -----------589
+progresses You may want to compare this one to the Lab 0 Makefile to see what we mean
+hugefile.txt -----------119
+yves
+ex.txt -----------4
+testfile.txt -----------4
+problems
+hugefile.txt -----------85
+How is the memory for each of your data structures allocated Do you have a way to free it to
+hugefile.txt -----------489
+Each line contains at least one character
+hugefile.txt -----------281
+stdlibh
+hugefile.txt -----------194
+9
+hugefile.txt -----------360
+10
+hugefile.txt -----------407
+71 Design overview
+hugefile.txt -----------524
+Norman Ramsey did use them in the solution to a somewhat similar problem given in years past
+hugefile.txt -----------509
+Here are some hints that may help you with your simlines output
+hugefile.txt -----------454
+Identifies what has been correctly implemented and what has not
+hugefile.txt -----------629
+Two lines are similar if
+hugefile.txt -----------396
+Any one or more of the named input files cannot be opened
+hugefile.txt -----------371
+The sections below give information about the purpose of this assignment as well as other background you
+hugefile.txt -----------75
+numbering is 1based ie the first line in the file is line 1 the second line 2 etc No leading
+hugefile.txt -----------433
+72 Homework 1 Design Specifics
+hugefile.txt -----------540
+mico mico
+ex.txt -----------3
+ex.txt -----------5
+testfile.txt -----------3
+testfile.txt -----------5
+testing our files
+ex.txt -----------1
+testfile.txt -----------1
+4 Create the c file that will hold your readaline implementation Move your Hello World greeting
+hugefile.txt -----------576
+help but try to draw it out first Then you can explain your thinking to a member of the course staff
+hugefile.txt -----------324
+file which is
+hugefile.txt -----------261
+of CREs in the Hanson book
+hugefile.txt -----------196
+The key to writing a good program of any significant complexity is to think thoroughly through two related
+hugefile.txt -----------525
+A consequence of the above rules is that simlines produces no output if there are no matches
+hugefile.txt -----------452
+exiting due to such an error you must not produce any output on stdout
+hugefile.txt -----------198
+grading If you have an unusual problem please email comp40staffcstuftsedu
+hugefile.txt -----------613
+51 readaline specification
+hugefile.txt -----------273
+Read this document carefully It contains the answers to many of the questions that you will have
+hugefile.txt -----------162
+Noah Mendelsohn is generally more comfortable with malloc Either will get you full credit if used
+hugefile.txt -----------329
+1 Create the c files for both your brightness and simlines programs In each write a main function
+hugefile.txt -----------569
+Furthermore you may rely on code that you have been given to do the same Note the Comp 40 Introduction to Exceptions may be very helpful in understanding these options for dealing with errors When
+hugefile.txt -----------197
+before
+hugefile.txt -----------80
+yves chen
+ex.txt -----------2
+testfile.txt -----------2
+3
+hugefile.txt -----------139
+Hansons data structures are polymorphic so you will have to specify what each void pointer
+hugefile.txt -----------553
+Definition of line similarity 10
+hugefile.txt -----------50
+We expect you to use these rather than building your own and we offer them as examples of interesting
+hugefile.txt -----------137
+routine The first program reports the average brightness of an image file The second program reports
+hugefile.txt -----------65
+Pnmrdr interface Icomp40buildinclude and Lcomp40buildlib lpnmrdr A good start
+hugefile.txt -----------247
+Of course if this were a commercial program that might not be good enough you would have to
+hugefile.txt -----------240
+41 brightness specification
+hugefile.txt -----------179
+We understand that assignments like this will take you out of your comfort zone When you read these
+hugefile.txt -----------95
+To give you practice in identifying interfaces and existing implementations that can help you solve
+hugefile.txt -----------84
+Similarities are reported if they occur within any single file andor if lines in more than one of the files
+hugefile.txt -----------365
+Where the specification above requires that you halt with an error you have two choices
+hugefile.txt -----------192
+link together the correct source modules for your projects The handout A simple introduction to Compile
+hugefile.txt -----------114
+Handling lines of arbitrary size may be trickier than you think DO NOT spend all your time trying
+hugefile.txt -----------342
+Your document should be a pdf file named designpdf You will submit your document via Gradescope
+hugefile.txt -----------617
+21 Purpose of this assignment
+hugefile.txt -----------77
+more involved
+hugefile.txt -----------591
+encountered
+hugefile.txt -----------382
+Weve said it before and youll hear us say it again and again in Comp 40 you will be tempted to
+hugefile.txt -----------496
+The array of bytes is allocated by readaline using malloc or the related allocation functions described
+hugefile.txt -----------287
+Implement a single function named readaline conforming to the function declaration in the header
+hugefile.txt -----------260
+comp40buildinclude which is in the include path if you use the provided Makefile
+hugefile.txt -----------259
+Efficiency Nobody likes deleting large swaths of code Nobody likes backtracking and starting over While
+hugefile.txt -----------531
+automatically when your code needs them Creating a Pnmrdr T will read the graymap header for you and
+hugefile.txt -----------216
+An error is encountered reading from any of the input files
+hugefile.txt -----------372
+83 Submitting your completed code 16
+hugefile.txt -----------61
+avoid largescale missteps that could cost hours of coding work A driving analogy feels appropriate here it
+hugefile.txt -----------534
+always refers to the largest possible groupings thus the line
+hugefile.txt -----------391
+submission Think weird test weird
+hugefile.txt -----------174
+If this is your first time programming in C you may find Mark Sheldons Whirlwind Tour of C helpful
+hugefile.txt -----------130
+or so on an unloaded server if the output is redirected to a file or to devnull If you look up devnull
+hugefile.txt -----------469
+Make an annotated copy of these instructions that you and your partner can share either on paper
+hugefile.txt -----------166
+in the next assignment we have developed an improved or at least more interesting version that we
+hugefile.txt -----------515
+testfile2
+hugefile.txt -----------445
+hugefile.txt -----------447
+You will have to do something appropriate if somebody hands you input that is not a portable graymap
+hugefile.txt -----------232
+the file is read repeatedly almost surely resulting in similar lines in the output and those lines must be
+hugefile.txt -----------440
+latest version available at the deadline What you may not do is to submit before the deadline then decide to
+hugefile.txt -----------609
+a partial credit version of readaline that supports input lines of limited length then you must rely
+hugefile.txt -----------380
+routine must conform to an interface that we provide
+hugefile.txt -----------67
+parts
+hugefile.txt -----------546
+41 brightness specification 5
+hugefile.txt -----------39
+Output hints
+hugefile.txt -----------453
+created with Atom string or Atom new To use strings as keys or for similar purposes with Hansons
+hugefile.txt -----------511
+use tokens and resubmit Reason at the deadline we gather your work and start grading If you resubmit
+hugefile.txt -----------610
+structures to both store and retrieve information in your simlines implementation You may find it helpful
+hugefile.txt -----------548
+Such lines contain the same words in the same order and we refer to that ordered list of words as the
+hugefile.txt -----------415
+this file and linking it with our test code We will not link with any of your other files so the code must be
+hugefile.txt -----------266
+Piazza or talk to a TA in the labs
+hugefile.txt -----------165
+later extended to add object orientation parameterized types and other higherlevel features Note that
+hugefile.txt -----------122
+4 Part A Brightness of a grayscale image
+hugefile.txt -----------176
+11
+hugefile.txt -----------451
+stored under the door
+hugefile.txt -----------318
+COMP 40 Assignment Files Pictures and Interfaces
+hugefile.txt -----------28
+submit40filesnpix
+hugefile.txt -----------638
+lines of output to be written to your display or even to a real file Of course for shorter inputs of hundreds
+hugefile.txt -----------472
+questions in advance of commencing coding work
+hugefile.txt -----------526
+To teach you to work in pairs on assignments that are more challenging than you have encountered
+hugefile.txt -----------79
+from the main function in simlines to your readaline function and call readaline from main
+hugefile.txt -----------577
+brightnessc
+hugefile.txt -----------633
+81 Deadlines and tokens 15
+hugefile.txt -----------59
+it is not possible to foresee every challenging nuance that lies ahead the design process helps to uncover and
+hugefile.txt -----------532
+1 Summary of the Assignment 2
+hugefile.txt -----------30
+2
+hugefile.txt -----------103
+in man 3 malloc It is the responsibility of the caller of readaline to free the array using free
+hugefile.txt -----------288
+selfcontained
+hugefile.txt -----------267
+Writing that leftjustified 20 character filename is easy if you know how to use printf Look online
+hugefile.txt -----------455
+similarities in file data and it uses an input routine called readaline that you will implement That input
+hugefile.txt -----------66
+treatise on the matter For a largescale industrial project a design plan can easily reach this level of detail
+hugefile.txt -----------542
+43 Help with image files
+hugefile.txt -----------213
+The simlines program raises a Checked Runtime Error if any of the following occur
+hugefile.txt -----------370
+1 Either or both of the supplied arguments is NULL
+hugefile.txt -----------294
+Thus any line contains zero or more words optionally preceded followed by andor separated by
+hugefile.txt -----------394
+1
+hugefile.txt -----------62
+Black cat in coal cellar Polar bear in a snowstorm
+hugefile.txt -----------200
+wellwritten C code from which you can learn Note the Hanson Array class is not available for
+hugefile.txt -----------138
+8 Organizing and submitting your solutions
+hugefile.txt -----------592
+Implementation Plan 1 page A detailed implementation plan should be part of every Comp 40
+hugefile.txt -----------557
+Contents
+hugefile.txt -----------29
+Note Hansonss Array data structure is not available for use in Comp 40 As you will see
+hugefile.txt -----------514
+in Part C with some of the development work for Part A and Part B As such we offer the following pieces
+hugefile.txt -----------160
+Note that for Part B you get partial credit for a limited implementation that only handles short input lines
+hugefile.txt -----------70
+is longer than 20 characters then it is written in its entirety but with no additional padding
+hugefile.txt -----------430
+If you have read this document carefully and still dont understand what is being asked of you ask on
+hugefile.txt -----------164
+Create a 1TB file careful now
+hugefile.txt -----------24
+pngtopnm
+hugefile.txt -----------223
+Scripts and Makefiles concentrate on the Makefile part should give you the information you need In later
+hugefile.txt -----------115
+the underscore character which is ASCII code 95 decimal All other characters are nonword
+hugefile.txt -----------387
+The purpose of this function is to read a single line of input from file inputfd which is presumed to have
+hugefile.txt -----------274
+These are the challenges that professional programmers and computer scientists face every day Stick with
+hugefile.txt -----------98
+get you moving In the meantime focus on the design work for Parts B and C
+hugefile.txt -----------255
+For Part C Similarities in files you will need several Hansons structures Youll also need a general understanding of Hansons conventions exceptions for assertions in error handling etc for Part A Brightness
+hugefile.txt -----------142
+will contain
+hugefile.txt -----------552
+Makefile
+hugefile.txt -----------272
+from the header you can compute how many pixels are in the image You should read exactly as many
+hugefile.txt -----------217
+12
+hugefile.txt -----------492
+The program takes at most one argument
+hugefile.txt -----------183
+The specification for simlines is as follows
+hugefile.txt -----------359
+in a grayscale image has a brightness between 0 and 1 where 0 is black and 1 is as bright as possible
+hugefile.txt -----------178
+To help you make the transition from C programming to the kind of C programming we expect in
+hugefile.txt -----------81
+42 Examples of Brightness in Use 5
+hugefile.txt -----------40
+qse note the commands below will create unreadable files and should be
+hugefile.txt -----------1
+implementation Some implementation steps may require only one or two tests while other steps will be
+hugefile.txt -----------590
+not just the obvious paths but the unusual ones
+hugefile.txt -----------504
+You can get images to play with by using one or more of the following programs
+hugefile.txt -----------221
+Testing Plan 1 page Explain in detail your testing plan for Parts B and C you do not need to specify
+hugefile.txt -----------585
+readaline must not cause memory leaks That is it must not leave allocated any dynamically acquired
+hugefile.txt -----------297
+or at EOF
+hugefile.txt -----------290
+The primary specifications for these programs are contained in the sections Part A Brightness Part B Read
+hugefile.txt -----------68
+assignment at hand For this first assignment your design document should consist of the following three
+hugefile.txt -----------545
+If it does what information will you retain about the match
+hugefile.txt -----------481
+dashes are shown above to make the spaces easier to count
+hugefile.txt -----------450
+82 Submitting your design document 15
+hugefile.txt -----------60
+appropriate to use C language structs arrays etc
+hugefile.txt -----------141
+team panda
+ex.txt -----------7
+to draw pictures make bulleted lists write English paragraphs etc The medium does not matter as much
+hugefile.txt -----------549
+The sections may appear in any order
+hugefile.txt -----------422
+on the error handling specified in Part B to exit from simlines if an unsupported long input line is
+hugefile.txt -----------381
+Under the covers Hansons ALLOC and NEW macros use malloc So you have a choice if you are
+hugefile.txt -----------326
+avoid memory leaks remember there is no way to free the memory for Atoms and you will not
+hugefile.txt -----------490
+Megans solution to this problem takes fewer than 50 lines of C code
+hugefile.txt -----------212
+7 Part D DESIGN Simlines Design 13
+hugefile.txt -----------55
+2 How will the program logic be organized and how will the computation be done
+hugefile.txt -----------528
+provided readalineh Do not create separate files for any helper functions you might create
+hugefile.txt -----------264
+61 simlines specification 9
+hugefile.txt -----------49
+hello world
+hugefile.txt -----------444
+language translates much more directly to hardware primitives Furthermore working in C allows us to
+hugefile.txt -----------126
+Create a 100GB file
+hugefile.txt -----------21
+we will likely not notice and would then have to regrade If you are planning to use tokens please do not
+hugefile.txt -----------611
+61 simlines specification
+hugefile.txt -----------358
+would be to understand the Makefile you received for this assignment and you can also look in A
+hugefile.txt -----------248
+The size t return type is an unsigned integer large enough to hold the number of bytes in the largest
+hugefile.txt -----------349
+The program writes its results to standard output in exactly the form specified for output below
+hugefile.txt -----------367
+Did you really look at that ASCII table Its not obvious how to even type some of those characters
+hugefile.txt -----------336
+MUST write the message to stderr
+hugefile.txt -----------306
+Create a 1MB file
+hugefile.txt -----------6
+djpeg use the grayscale option
+hugefile.txt -----------222
+checking than Pnmrdr does
+hugefile.txt -----------238
+stdlibh This is true of all programs you write in this course unless otherwise specified
+hugefile.txt -----------191
+hugefile.txt -----------369
+So why C in Comp 40 A primary goal of Comp 40 is to teach you how computers work and to show you
+hugefile.txt -----------124
+a strong signal that your programs should be careful to check for and handle erroneous input What
+hugefile.txt -----------234
+We strongly urge you to implement that limited version first then go on and complete Part
+hugefile.txt -----------71
+number etc can easily be handled by a single printf
+hugefile.txt -----------458
+Congratulations on making through your first Comp 40 assignment
+hugefile.txt -----------639
+efficient ways if you use the right data structures Be very careful to check the ordering rules for
+hugefile.txt -----------487
+coding of your solution Find ways to test individual pieces of your code Create test cases that explore
+hugefile.txt -----------503
+other by a single additional newline n However there must not be an additional newline following
+hugefile.txt -----------420
+53 Hints to get you moving
+hugefile.txt -----------313
+The output written to stdout by simlines must conform exactly to the following specification
+hugefile.txt -----------417
+the last match group
+hugefile.txt -----------421
+test the whole thing and then try to find where the bugs are This will almost surely waste a lot of
+hugefile.txt -----------498
+use in Comp 40 and is not needed for this assignment Of course you are also encouraged where
+hugefile.txt -----------140
+simlines implementation
+hugefile.txt -----------582
+To get started run
+hugefile.txt -----------110
+C character strings are C arrays so you will definitely use C arrays when working with those
+hugefile.txt -----------517
+Within a match group the lines corresponding to each match are written in order That is all
+hugefile.txt -----------435
+bit about the pgm image format
+hugefile.txt -----------231
+tokens
+hugefile.txt -----------607
+do due diligence to check that Pnmrdr was indeed detecting all significant errors For our purposes
+hugefile.txt -----------241
+6
+hugefile.txt -----------239
+grayscale value
+hugefile.txt -----------573
+Analogy Please slip the address of the party under my door In this case there are two locations involved the location of the party and the location where we want location of the party to be
+hugefile.txt -----------316
+If no argument is given brightness reads from standard input which should contain a portable
+hugefile.txt -----------185
+81 Deadlines and tokens
+hugefile.txt -----------598
+hinges on the speed and clarity with which you are able to communicate with your partner and the course
+hugefile.txt -----------537
+This file must be selfcontained ie it must rely on no other source files except of course the
+hugefile.txt -----------263
+must be only what is produced by the default Checked Runtime Error exception handler
+hugefile.txt -----------375
+43 Help with image files 6
+hugefile.txt -----------41
+If you have not received an email to join the class on Gradescope please contact the course staff
+hugefile.txt -----------618
+might well result in an output group like this
+hugefile.txt -----------443
+projects you will likely have to make more extensive modifications to Makefiles so you should read and
+hugefile.txt -----------116
+and see if it works We need to know the specific inputs youll be using and their expected outputs A
+hugefile.txt -----------587
+read the number of lines in that file using wc l largefile1mbtxt
+hugefile.txt -----------4
+to implement that at the cost of not getting to Part C As noted above you will get significant partial
+hugefile.txt -----------343
+do the work of reading input lines yourself
+hugefile.txt -----------301
+assignment regardless of whether or not you are required to submit it It lays out a stepwise progression
+hugefile.txt -----------558
+5 Extend simlines to open and close the intended file and call readaline with real arguments
+hugefile.txt -----------579
+will introduce then You should not need to use Hansonss array for this first homework Of course
+hugefile.txt -----------516
+2 Extend your brightness implementation to read through each pixel of a pgm image and print out its
+hugefile.txt -----------572
+Experience shows that over time almost all of you will learn not just to build programs like these but also
+hugefile.txt -----------101
+dd ifdevzero oflargefile100mbtxt count1024 bs102400
+hugefile.txt -----------13
+If you begin with a partial credit version of readaline be sure to save a copy of the code before you
+hugefile.txt -----------310
+If you are a little unsure how to get started with the brightness program the brightness lab will help to
+hugefile.txt -----------254
+See the photos on the previous page If cellarpng is a picture of a black cat in a coal cellar at midnight
+ex.txt -----------9
+hugefile.txt -----------202
+complex languages So using C we learn more about the internal workings of languages like C and Java
+hugefile.txt -----------128
+for hints about printing fixed width leftjustified strings or ask for help If you do this right all the
+hugefile.txt -----------456
+Without the q you may have difficulties with scp ssh git and rsync
+hugefile.txt -----------109
+You will make two submissions to complete this assignment Several days before the final submission you
+hugefile.txt -----------593
+To give you experience working with a partner to design document implement and test a computer
+hugefile.txt -----------92
+For full credit your readaline implementation must support input lines of any size Significant partial
+hugefile.txt -----------303
+scaled integer as described in the Pnmrdr interface
+hugefile.txt -----------219
+dd ifdevzero oflargefile1gbtxt count1024 bs1048576
+hugefile.txt -----------16
+formatting including correct handling of very long filenames the proper right justification of the line
+hugefile.txt -----------457
+For handling input lines you MUST NOT use the system library routines getline or getdelim and you
+hugefile.txt -----------299
+2 An error is encountered reading from the file
+hugefile.txt -----------295
+Collaboration and Academic Honesty Policy
+hugefile.txt -----------150
+8 Organizing and submitting your solutions 15
+hugefile.txt -----------58
+Which data if any should be converted to Hanson Atoms and why
+hugefile.txt -----------484
+Draw pictures Take some interesting but small test cases and draw out in detail a picture of all your
+hugefile.txt -----------493
+line number
+hugefile.txt -----------438
+The key to solving the simlines problem is to think very carefully about the data structures you will
+hugefile.txt -----------476
+word must match the first word etc
+hugefile.txt -----------399
+Identify what data structures you will need to compute simlines and what each data structure
+hugefile.txt -----------551
+63 Problem analysis and advice
+hugefile.txt -----------474
+as conveying your plan clearly We are specifically looking for you to address the following items
+hugefile.txt -----------550
+ASCII stands for American Standard Code for Information Interchange Computers can only understand numbers so an ASCII code is the numerical representation of a character such as a or or an action of some sort ASCII was developed a long time ago and now the nonprinting c
+hugefile.txt -----------26
+You may print an error message on stderr and exit your program using exitEXIT FAILURE from
+hugefile.txt -----------193
+7
+hugefile.txt -----------277
+staff A written design that succinctly lays out your coding plan ensures that you and your partner are on
+hugefile.txt -----------538
+If more than one argument is given brightness halts with an error see below
+hugefile.txt -----------187
+Course Coding Standards
+hugefile.txt -----------152
+0972
+ex.txt -----------15
+hugefile.txt -----------208
+readaline leaves the file seek pointer at the first ie unread character of the following line if any
+hugefile.txt -----------289
+Says approximately how many hours you have spent completing the assignment
+hugefile.txt -----------630
+learn about them so you understand what theyre doing The Makefile for Lab 0 and this one are intended
+hugefile.txt -----------117
+reference
+hugefile.txt -----------568
+a valuable checklist as you work through the assignment
+hugefile.txt -----------170
+6 Build your readaline function Extend simlines to print each line in the supplied file using readaline
+hugefile.txt -----------580
+Please write a C program brightness that prints the average brightness of a grayscale image Every pixel
+hugefile.txt -----------177
+credit for both Parts B and C if you can handle lines of at least 200 characters you will use your
+hugefile.txt -----------344
+overwhelmed by the assignment as a whole
+hugefile.txt -----------560
+ppmtopgm
+hugefile.txt -----------225
+similar to each other
+hugefile.txt -----------401
+Question According to the specification is there any file you cannot read in its entirety by repeatedly
+hugefile.txt -----------338
+3 Memory allocation fails
+hugefile.txt -----------296
+but is carefully explained there
+hugefile.txt -----------250
+44 Getting image files 6
+hugefile.txt -----------42
+24 Getting started with Hansons Interfaces and Implementations
+hugefile.txt -----------135
+parts of the assignment Ie submit either your design or your code a day late you use a token submit
+hugefile.txt -----------605
+you skim the beginnings of the relevant chapters on pages 4552 3334 103107 115118 pages 118125
+hugefile.txt -----------144
+credit for doing a poor job on Part C than for failing to handle long lines in Part B
+hugefile.txt -----------73
+14
+hugefile.txt -----------575
+file
+hugefile.txt -----------362
+82 Submitting your design document
+hugefile.txt -----------614
+contains the two words abc and def but not the words ab ef or a
+hugefile.txt -----------393
+match groups grows much larger than 10000 By perform well we mean completing in under 20 seconds
+hugefile.txt -----------468
+your code
+hugefile.txt -----------595
+C strings are different from C strings and Cs string library can be tricky to use properly Make
+hugefile.txt -----------505
+be penalized for using Atoms All other memory leaks must be avoided
+hugefile.txt -----------491
+If a match group contains n matches then the corresponding output section consists of n 1 newlineterminated lines
+hugefile.txt -----------423
+youll find that it is a pseudofile that throws away whatever is written to it Writing to that wont let you
+hugefile.txt -----------470
+8
+hugefile.txt -----------317
+If you just code without understanding this you are in for hours of frustration Hanson offers some
+hugefile.txt -----------507
+the following much of your design submission ask you to answer these questions
+hugefile.txt -----------478
+dd ifdevzero oflargefile10gbtxt count1024 bs10485760
+hugefile.txt -----------19
+You will also use the function in Part C below so problems with this function can also affect your grade on
+hugefile.txt -----------268
+3 General Advice
+hugefile.txt -----------157
+You must also include time estimates for each step of your implementation plan That is an estimate of
+hugefile.txt -----------564
+up with a strategy for carefully testing readaline by itself
+hugefile.txt -----------335
+3 Incorporate the necessary computations to print out the average brightness value
+hugefile.txt -----------574
+40 homework including this one Pay particular attention to the following sections
+hugefile.txt -----------148
+The Gradescope interface makes these steps fairly straightforward but contact the course staff if you have
+hugefile.txt -----------622
+The main issues here are
+hugefile.txt -----------227
+22 Setting up your environment
+hugefile.txt -----------104
+should understand before starting work
+hugefile.txt -----------76
+recommended strategy is to organize your testing plan according to your implementation plan For each
+hugefile.txt -----------588
+of the programming aspect of the assignment allowing you to focus on one thing at a time instead of being
+hugefile.txt -----------559
+free stuff
+ex.txt -----------8
+If the same file is named more than once on the command line then it is read and processed repeatedly
+hugefile.txt -----------376
+as gentle introductions we will gradually make use of more sophisticated features of make as the semester
+hugefile.txt -----------118
+62 Performance target 12
+hugefile.txt -----------53
+tackle the full credit implementation That way if you get in trouble with the enhancement youll still have
+hugefile.txt -----------311
+Each invocation of readaline retrieves the next unread line in the file The characters comprising the
+hugefile.txt -----------284
+matches in the file named by the first command line argument appear ahead of those in the files
+hugefile.txt -----------436
+Application For this function the caller wants access to the data in the next line The readaline
+hugefile.txt -----------319
+Start early The implementation plan that we give you in Part D begins with some very basic steps
+hugefile.txt -----------171
+how long you think it will take you to implement that step These estimates not only allow you to plan
+hugefile.txt -----------565
+You are to write a program named simlines the purpose of which is to read any number of files and detect
+hugefile.txt -----------353
+We emphasize again that pair programming is required for all Comp 40 assignments It is your responsibility to understand and abide by the Comp 40 policies on pair programming If you have not
+hugefile.txt -----------154
+Comp 40 Introduction to Exceptions
+hugefile.txt -----------153
+dd ifdevzero oflargefile1mbtxt count1024 bs1024
+hugefile.txt -----------7
+Repeat the data structures are already built for you your job is to figure out which ones will be
+hugefile.txt -----------519
+memory other than that returned to the caller through datapp
+hugefile.txt -----------298
+will submit your design document At the end of your work you will make a final submission that includes
+hugefile.txt -----------594
+size_t readalineFILE inputfd char datapp
+hugefile.txt -----------262
+submit at the regular deadline i e do not submit something until you are really ready to submit for
+hugefile.txt -----------612
+credit is available if you support input files in which no line exceeds 200 characters in length including any
+hugefile.txt -----------304
+In this assignment you will design build and test two application programs and one supporting file input
+hugefile.txt -----------64
+For each Comp 40 assignment however you will be asked to submit only a reduced subset of these design
+hugefile.txt -----------543
+data structures and how they connect to each other Once you have this picture absolutely clear and
+hugefile.txt -----------494
+that spits out the ubiquitous Hello World greeting Compile them with the provided script and
+hugefile.txt -----------570
+if there is more than one by a single space character
+hugefile.txt -----------425
+and if bearjpg is a picture of a polar bear in an snowstorm then output should look like this of course
+ex.txt -----------10
+hugefile.txt -----------203
+be creating and about how those data structures will result in a solution Ask yourself questions like
+hugefile.txt -----------477
+If you read carefully you will note that except for allowing the output groups to be written in any
+hugefile.txt -----------459
+each other where similarity is determined by the definition below
+hugefile.txt -----------364
+with looking ahead so that you can plan your time and overlap thinking about some of the harder problems
+hugefile.txt -----------159
+This is a big assignment and its your first assignment You will need to balance working in an orderly way
+hugefile.txt -----------158
+pullcode filesnpix
+hugefile.txt -----------111

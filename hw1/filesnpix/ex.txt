@@ -1,0 +1,17 @@
+testing our files
+ yves chen + @
+mico   mico
+yves
+mico        mico
+
+team panda
+free stuff
+See the photos on the previous page. If cellar.png is a picture of a black cat in a coal cellar at midnight,
+and if bear.jpg is a picture of a polar bear in an snowstorm, then output should look like this (of course,
+the prompts will be different, but your output should be just like this):
+sunfire33{megan}: brightness cellar.pgm
+0.000
+sunfire33{megan}: djpeg -grayscale bear.jpg | brightness
+0.972
+sunfire33{megan}:
+The first example takes its input from a file named on the command line, and the second example takes its

@@ -1,0 +1,120 @@
+                COMP 40 Lab: Unboxed and 2D Arrays
+
+
++--------------------------------------------------------+
+|Keeper of the record:                                   |
+|--------------------------------------------------------|
+| Other group member(s):                                   |
+|                                                        |
+|                                                        |
+|                                                        |
++--------------------------------------------------------+
+
+
+PART 1: BOXED AND UNBOXED ARRAYS
+--------------------------------
+
+You are about to design the interface and implementation for a
+collection data type, I.e. an ADT like Hanson's, and you are
+considering the tradeoffs between using a boxed or an unboxed
+interface for values that users store in your collection.
+
+1A: Briefly define the terms "boxed" and "unboxed" as used for these
+    interfaces (I.e. help us be sure you know which is which!):
+
+
+
+
+
+
+1B: List two (or more) advantages of the boxed representation.
+
+
+
+
+
+
+
+
+1C: List two (or more) advantages of an unboxed representation.
+
+
+
+
+
+
+
+
+1D: Look at the interface to UArray (the pointer to an interface
+    summary is in the lab instructions). Discuss the methods that show
+    the use of the unboxed style. Why, for example, does UArray_new
+    take both a number of elements and an element size? 
+
+
+
+
+
+
+
+
+
+
+
+PART 2: 2D Arrays from 1D Arrays
+--------------------------------
+
+2A. One way to construct a 2D array is to use multiple 1D
+    arrays. Describe briefly how you would do this. For example, if
+    the user asked you to create a 5x7 array of values, how many
+    one-dimensional arrays would you create? If the user asked to
+    store a value in cell [3,6] where would it go?
+
+
+
+
+
+
+
+
+
+2B. Another approach is to use a single one-dimensional array and to
+    put all the elements of the 2D array into that. Again, assumingg
+    that you are to create a 7x5 2D array, give a mathematical formula
+    for the index in the 1D array where a value [x,y], would go in the
+    1D array.
+
+
+
+
+
+
+
+
+2C. (optional) is there another mapping that would work as well?
+
+
+
+
+
+
+
+
+
+
+
+
+PART 3: Designing the UArray2 Interface
+---------------------------------------
+
+3A. Describe three (or more) things you learned about the design and semantics 
+    of the UArray2 interface that you learned from reading useuarray2.c
+    and from running correct_useuarray2.
+
+
+
+
+
+
+
+
+
