@@ -1,0 +1,33 @@
+README
+Comp40: Profiling HW7
+By: Era Iyer (eiyer01) and Yves Chen (ychen22)
+Date: December 2, 2019
+
+---------------------------------- General ----------------------------------
+
+We would like to thank COMP40 TA James Cameron for all his help!
+
+We spent approximately 4 hours analyzing this assignment, 
+and 12 hours solving the problem. 
+
+------------------------------- Benchmarks Used ------------------------------
+1. sandmark.umz
+2. midmark.um
+3. advent.umz
+
+-------------------------------- Time Analysis ------------------------------
+After optimizing our um, we ran kchachegrind and found that not much
+information from our execute function could be analyzed since we embedded all
+the function calls in execute. Because all of our data mapping data structures
+are now native C Arrays, the only functions that kcachegrind could separate
+were calls to calloc and malloc. Calloc was called 196,252,496 times and took 
+6.32 percent of total time whie malloc was called 88,140,335 and took 2.84%
+of total time.
+
+When analyzing assembler code, we noticed the same theme. Calls to Malloc were
+taking up most of the instructions, as well as calls to Calloc in the function
+load and store, which initalizes segmentZero with valid instructions. Lastly,
+after halt is called, the free function was also used heavily, with 426,868
+calls to free to ensure no memory leaks. To the best of our knowledge, there
+is not much that we can do to improve the source code since calls to malloc
+and free are necessary to maintain the data structures that store segments.

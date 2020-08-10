@@ -1,0 +1,43 @@
+//Era Iyer (eiyer01) and Yves Chen (ychen22)
+//December 10, 2019
+//printd.ums
+//Description: contains print function the prints value in register 4
+
+.section init
+	.temps r6, r7
+	.zero r0
+.section text
+
+	//print
+	//wrapper print function that calls appropriate functions to print
+	print:
+		push r1 on stack r2
+		//r5 is used as counter for number of digits
+        r5 := 0
+		goto push_num
+
+	//push_num
+	//iterates through the number and appends digits needed to print onto stack
+	push_num:
+		r5 := r5 + 1
+		r1 := r4 mod 10
+		push r1 on stack r2
+		r4 := r4 / 10
+		if (r4 != 0) goto push_num
+		goto print_num
+
+	//print_num
+	//pops from stack and prints each digit of the number
+	print_num:
+		if (r5 == 0) goto print_new_line
+		pop r1 off stack r2
+		output r1+ 48
+		r5 := r5 - 1
+		goto print_num
+
+	//print_new_line
+	//prints new line at the end of printing the number
+	print_new_line:
+		output "\n"
+		pop r1 off stack r2
+    goto r1

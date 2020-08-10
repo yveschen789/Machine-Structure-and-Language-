@@ -1,0 +1,347 @@
+//Era Iyer (eiyer01) and Yves Chen (ychen22)
+//December 10, 2019
+//calc40.ums
+//Description: contains calculator-related functions
+
+//STRUCTURE
+//r3 is the end stack
+//r2 is the temp stack
+//r5 holds jumptable values
+
+
+.section init
+	.temp r6, r7
+	.zero r0
+
+	//initalizing jumptable of size 256
+	initializeJT:
+			r5 := 0
+			goto initJT
+
+	initJT:
+	  r4 := jumptable + r5
+		m[r0][r4] := input_error
+		r5 := r5 + 1
+		if (r5 <s 256) goto initJT using r1
+
+
+	//setting character values in jumptable
+	fillTable:
+		m[r0][jumptable + ' '] := space
+		m[r0][jumptable + '\n'] := newline
+		m[r0][jumptable + '*'] := mul
+		m[r0][jumptable + '+'] := add
+		m[r0][jumptable + '-'] := sub
+		m[r0][jumptable + '/'] := div
+		m[r0][jumptable + '|'] := or
+		m[r0][jumptable + '&'] := and
+		m[r0][jumptable + 'c'] := change
+		m[r0][jumptable + 'p'] := popoff
+		m[r0][jumptable + '~'] := bitwise
+		m[r0][jumptable + 's'] := swap
+		m[r0][jumptable + 'd'] := dup
+		m[r0][jumptable + 'z'] := remove
+    goto fillDigits
+
+	//setting numerical values in jumptable
+  fillDigits:
+			m[r0][jumptable + '0'] := pushval
+	    m[r0][jumptable + '1'] := pushval
+			m[r0][jumptable + '2'] := pushval
+			m[r0][jumptable + '3'] := pushval
+			m[r0][jumptable + '4'] := pushval
+			m[r0][jumptable + '5'] := pushval
+			m[r0][jumptable + '6'] := pushval
+			m[r0][jumptable + '7'] := pushval
+			m[r0][jumptable + '8'] := pushval
+			m[r0][jumptable + '9'] := pushval
+
+.section text
+	space:
+		goto waiting
+
+	//newline
+	//calls print function on stack r3 when user hits new line.
+	//pops every value off stack r3, pushes to stack r2 (temp stack) and restores
+	//values onto stack r3 at the end
+	newline:
+		if (r3 == endstack) goto restore using r4
+		pop r4 off stack r3
+		r5 := 0x80000000
+		if (r4 == r5)goto neg using r1
+		if(r4 <s 0) goto neg using r1
+		push r4 on stack r2
+		output ">>> "
+		goto print linking r1
+		goto newline
+
+	//neg
+	//when newline sees a negative number, function prints a negative and
+	//prints the value though passing print a pos representation of it
+	neg:
+		push r4 on stack r2
+		r4 := -r4
+		output ">>> -"
+		goto print linking r1
+		goto newline
+
+	//restore
+	//pushes contents of stack r2 (temp stack) back onto stack r3 (end stack)
+	restore:
+		if (r2 == tempstack) goto waiting using r4
+		pop r4 off stack r2
+		push r4 on stack r3
+		goto restore
+
+	//check_two
+	//called by each operations function to make sure two valid numbers on
+	//stack and calls function to print necessary error statement
+	check_two:
+		if (r3 == endstack) goto error_stk1 using r1
+		pop r4 off stack r3
+		if (r3 == endstack) goto error_stk2 using r1
+		pop r1 off stack r3
+		goto r5
+
+	//check_one
+	//called by dup operation function to make sure one valid number is on
+	//stack and calls function to print necessary error statement
+	check_one:
+		if (r3 == endstack) goto error_stk3 using r1
+		pop r4 off stack r3
+		goto r5
+
+	//pushval
+	//pushes numerical value entered by user onto stack r3, goes to entering
+	//state in the case number entered has multiple digits
+	pushval:
+		r1 := r1 - '0'
+		push r1 on stack r3
+		goto entering
+
+	//mul
+	//multiplies top two values from the stack and pushes the product back onto
+	//the stack
+	mul:
+		goto check_two linking r5
+		r4 := r1 * r4
+		push r4 on stack r3
+		goto waiting
+
+	//add
+	//adds top two values from the stack and pushes the result back onto
+	//the stack
+	add:
+		//check that there are 2 values in the stack
+		goto check_two linking r5
+		r4 := r1 + r4
+		push r4 on stack r3
+		goto waiting
+
+	//sub
+	//subtracts top two values from the stack and pushes the result back onto
+	//the stack
+	sub:
+		goto check_two linking r5
+		r4 := r1 - r4
+		push r4 on stack r3
+		goto waiting
+
+	//div
+	//divides top two values from the stack and pushes the result back onto
+	//the stack
+	div:
+		goto check_two linking r5
+		if(r4 == 0) goto divide_error
+		r5 := r1 & r4
+		if(r5 <s 0) goto div_both_neg using r5
+		if(r1 <s 0) goto div_first_neg using r5
+		if(r4 <s 0) goto div_sec_neg using r5
+		r4 := r1 / r4
+		push r4 on stack r3
+		goto waiting
+
+	//div_both_neg
+	//special division case where both the divisor and the dividend are negative
+	//convert both values to positive, then divide and push onto stack
+	div_both_neg:
+		r4 := -r4
+		r1 := -r1
+		r4 := r1 / r4
+		push r4 on stack r3
+		goto waiting
+
+	//div_first_neg
+	//special division case where the divisor is negative, convert the divisor
+	//to positive, then divide, make result negative and push onto stack
+	div_first_neg:
+		r1 := -r1
+		r4 := r1 / r4
+		r4 := -r4
+		push r4 on stack r3
+		goto waiting
+
+	//div_sec_neg
+	//special division case where the dividend is negative, convert the dividend
+	//to positive, then divide, make result negative and push onto stack
+	div_sec_neg:
+		r4 := -r4
+		r4 := r1 / r4
+		r4 := -r4
+		push r4 on stack r3
+		goto waiting
+
+	//divide_error
+	//special division case where the dividend is 0. Output error and push
+	//divisor and dividend back onto the stack (restore stack)
+	divide_error:
+		output "Division by zero"
+		output "\n"
+		push r1 on stack r3
+		push r4 on stack r3
+		goto waiting
+
+	//or
+	//performs bitwise or on top two value of the stack and pushes result onto
+	//stack
+	or:
+		goto check_two linking r5
+		r4 := r1 | r4
+		push r4 on stack r3
+		goto waiting
+
+	//and
+	//performs bitwise and on top two value of the stack and pushes result onto
+	//stack
+	and:
+		goto check_two linking r5
+		r4 := r1 & r4
+		push r4 on stack r3
+		goto waiting
+
+	//change
+	//changes the sign of the top value of the stack and pushes new value back
+	//onto the stack
+	change:
+		goto check_one linking r5
+		r4 := -r4
+		push r4 on stack r3
+		goto waiting
+
+	//popoff
+	//pops top value off the stack
+	popoff:
+		pop r4 off stack r3
+		goto waiting
+
+	//bitwise
+	//performs bitwise complement on top element of stack and pops new value
+	//back onto the stack
+	bitwise:
+		goto check_one linking r5
+		r4 := ~r4
+		push r4 on stack r3
+		goto waiting
+
+	//swap
+	//swaps top two elements by popping and pushes them back on in reverse order
+	swap:
+		goto check_two linking r5
+		r5 := r1
+		r1 := r4
+		r4 := r5
+		push r1 on stack r3
+		push r4 on stack r3
+		goto waiting
+
+	//dup
+	//duplicates the top value of the stack by popping the top value off and
+	//pushing it back on twice
+	dup:
+		goto check_one linking r5
+		push r4 on stack r3
+		push r4 on stack r3
+		goto waiting
+
+	//remove
+	//clears the stack by popping off all the elements
+	remove:
+		if (r3 == endstack) goto waiting using r4
+		pop r4 off stack r3
+		goto remove
+
+	//input_error
+	//prints Unknown Character error if user enters character not defined in
+	//the jumptable
+	input_error:
+		output "Unknown Character '"
+		output r1
+		output "'"
+		output '\n'
+		goto waiting
+
+	//waiting
+	//waiting for user the provide input, then goes to appropriate jumptable
+	//function
+	waiting:
+		r1:= input()
+		if (r1 == 0xffffffff) goto end_program using r4
+		r5 := jumptable + r1
+		r5 := m[r0][r5]
+		goto r5
+
+	//entering
+	//pops the number on the top of the stack, multiplies it by 10, adds the
+	//value of the next digit, and pushes the final value back onto the stack
+	entering:
+		r4 := input()
+		r5 := jumptable + r4
+		r5 := m[r0][r5]
+		if (r5 == pushval) goto append using r1
+		if (r5 == input_error) goto input_error_entering using r1
+		goto r5
+
+	//append
+	//Helper function for entering. Appends digit onto top value of stack
+	//by multiplying by 10 and adding new digit, then pushing result onto stack
+	append:
+		pop r1 off stack r3
+		r4 := r4 - '0'
+		r1 := r1 * 10
+		r1 := r4 + r1
+		push r1 on stack r3
+		goto entering
+
+	//input_error_entering
+	//sets r1 to value at r4 so that appropriate error message shows when
+	//going to input_error
+	input_error_entering:
+		r1 := r4
+		goto input_error
+
+	//error_stk1
+	//Case when end of stack. does not push recently popped item
+	error_stk1:
+		output "Stack underflow---expected at least 2 elements"
+		output "\n"
+		goto waiting
+
+	//error_stk1
+	//Case when end of stack. pushes recently popped item to stack
+	error_stk2:
+		push r4 on stack r3
+		output "Stack underflow---expected at least 2 elements"
+		output "\n"
+		goto waiting
+
+	//error_stk1
+	//Case when end of stack called by dup error case
+	error_stk3:
+		output "Stack underflow---expected at least 1 element"
+		output "\n"
+		goto waiting
+
+	//end_program
+	//called when end of file character is read in waiting. ends program
+	end_program:
+		halt

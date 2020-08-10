@@ -1,0 +1,23 @@
+README
+Comp40: UMASM hw8
+By: Era Iyer (eiyer01) and Yves Chen (ychen22)
+Date: December 10, 2019
+
+---------------------------------- General ----------------------------------
+
+We would like to thank COMP40 TA James Cameron, Josh Simani, Leila Minowada
+for their help
+
+We spent approximately 4 hours analyzing this assignment,
+12 hours writing the assembly code, 2 hours debugging the code
+
+We believe everything has been properly implemented.
+
+The only departure from our initial design was creating an additional stack
+as a temporary stack. This was needed for our print function so that we could
+restore the original stack after popping off all the values.
+
+The print module was implemented by iterating through the number popped
+off from the top of the stack (stored in r4). Recursively stores each digit
+into a stack (r2) and then recursively pops off from this stack and outputs
+each digit (one at a time).

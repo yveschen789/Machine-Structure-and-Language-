@@ -1,0 +1,25 @@
+//Era Iyer (eiyer01) and Yves Chen (ychen22)
+//December 10, 2019
+//urt0.ums
+//Description: creates space for both stacks as well as the jumptable
+
+.section init
+	.temps r1, r6, r7
+	.zero r0
+
+.section data
+	.space 100000
+	endstack:
+
+	.space 100000
+	tempstack:
+
+.section rodata
+    jumptable:
+        .space 256
+
+.section init
+	start:
+		r0 := 0
+		r3 := endstack
+		r2 := tempstack

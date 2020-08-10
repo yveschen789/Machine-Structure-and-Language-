@@ -1,0 +1,10 @@
+//Era Iyer (eiyer01) and Yves Chen (ychen22)
+//December 10, 2019
+//callmain.ums
+//Description: goes to waiting in calc40.ums
+
+.section init
+	.temp r6, r7
+	.zero r0
+
+	goto waiting

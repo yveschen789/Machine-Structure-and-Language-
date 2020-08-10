@@ -1,0 +1,182 @@
+//r2 is the main stack
+//r3 is the temp stack
+//r5 holds jumptable values
+
+.section init
+	.temp r6, r7
+	.zero r0
+
+	#initalizing jumptable of size 256
+	initializeJT:
+			r5 := 0
+			goto initJT
+
+	initJT:
+
+	  r4 := jumptable + r5
+		m[r0][r4] := input_error
+		r5 := r5 + 1
+		if (r5 <s 256) goto initJT using r4
+
+
+	#setting values in jumptable
+	fillTable:
+		m[r0][jumptable + ' '] := space
+		m[r0][jumptable + '\n'] := newlinefirst
+		m[r0][jumptable + '*'] := mul
+		m[r0][jumptable + '+'] := add
+		m[r0][jumptable + '-'] := sub
+		m[r0][jumptable + '/'] := div
+		m[r0][jumptable + '|'] := or
+		m[r0][jumptable + '&'] := and
+		m[r0][jumptable + 'c'] := change
+		m[r0][jumptable + 'p'] := popoff
+		m[r0][jumptable + '~'] := bitwise
+		m[r0][jumptable + 's'] := swap
+		m[r0][jumptable + 'd'] := dup
+		m[r0][jumptable + 'z'] := remove
+    goto fillDigits
+
+  fillDigits:
+			m[r0][jumptable + '0'] := pushval
+	    m[r0][jumptable + '1'] := pushval
+			m[r0][jumptable + '2'] := pushval
+			m[r0][jumptable + '3'] := pushval
+			m[r0][jumptable + '4'] := pushval
+			m[r0][jumptable + '5'] := pushval
+			m[r0][jumptable + '6'] := pushval
+			m[r0][jumptable + '7'] := pushval
+			m[r0][jumptable + '8'] := pushval
+			m[r0][jumptable + '9'] := pushval
+
+
+.section text
+	space:
+		goto waiting
+
+
+	newlinefirst:
+		if(r5 == input_error) goto waiting using r4
+		r5 := tempstack
+		r4 := '#'
+		push r4 on stack r5
+		r4 := '@'
+		push r4 on stack r5
+		goto newline
+
+	newline:
+		output "new line"
+		pop r3 off stack r2
+		#output r3
+		r5 := tempstack
+		push r3 on stack r5
+		output "heres"
+		if (r3 == '$') goto recur_restore using r4
+
+		goto print linking r1
+		goto newline
+
+
+	recur_restore:
+
+		r5 := tempstack
+		pop r3 off stack r5
+		if(r3 == '#') goto waiting using r4
+		push r3 on stack r2
+		goto recur_restore
+
+
+	pushval:
+		#output "in push val"
+		r1 := r1 - '0'
+		push r1 on stack r2
+		goto entering
+	mul:
+		pop r3 off stack r2
+		pop r1 off stack r2
+		r3 := r1 * r3
+		push r3 on stack r2
+		goto waiting
+	add:
+		#output "in add"
+		pop r3 off stack r2
+		pop r1 off stack r2
+		r3 := r1 + r3
+		push r3 on stack r2
+		goto waiting
+	sub:
+		pop r3 off stack r2
+		pop r1 off stack r2
+		r3 := r1 - r3
+		push r3 on stack r2
+		goto waiting
+	div:
+	or:
+	and:
+	change:
+	popoff:
+	#	output "pop"
+		pop r3 off stack r2
+		goto waiting
+	bitwise:
+        output "here2"
+				goto waiting
+	swap:
+		pop r3 off stack r2
+		pop r1 off stack r2
+		push r3 on stack r2
+		push r1 on stack r2
+		goto waiting
+	dup:
+	remove:
+	input_error:
+		output "incorrect output '"
+		output r1
+
+		output "'"
+		output '\n'
+		goto waiting
+
+	main:
+		output "in main"
+		#goto r1
+		#output ":()"
+		push r1 on stack r2
+		r4 := '$'
+		push r4 on stack r2
+
+		goto waiting
+		pop r1 off stack r2
+		halt
+		goto r1
+
+	waiting:
+		#output "in waiting"
+      r1:= input()
+			r5 := jumptable + r1
+		 	r5 := m[r0][r5]
+		 	goto r5
+
+	entering:
+		#output "in entering"
+		pop r1 off stack r2
+		r3 := input()
+		r5 := jumptable + r3
+		r5 := m[r0][r5]
+		if (r5 == pushval) goto append using r4
+
+		#if (r5 != input_error) goto push_r1 using r4
+		push r1 on stack r2
+		goto r5
+
+	push_r1:
+		#output r1+48
+		push r1 on stack r2
+		goto r5
+
+	append:
+	r3 := r3 - '0'
+	r1 := r1 * 10
+	r1 := r3 + r1
+	push r1 on stack r2
+	goto entering
